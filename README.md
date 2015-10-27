@@ -8,3 +8,5 @@ Simple app to demostrate the use of cordova plugin chrome socket udp
 This app has only one button on the top right corner that scan and receive udp packet for 10 seconds,
 then display all the packets. Actually the port to be listened to is hardcoded on line 12 of the file
 js/udp-services.js.
+
+Actually I've only tried this demo on android
