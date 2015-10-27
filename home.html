@@ -1,0 +1,14 @@
+<ion-pane>
+	<ion-content class="content">
+		<ion-list>
+			<ion-item class="item item-divider item-icon-right">
+				upd packets received 
+      			<i class="icon ion-refresh" ng-click="vm.listening()"></i>
+			</ion-item>
+			<ion-item class="content item item-text-wrap" ng-repeat="pck in vm.udpArray">
+				{{pck.data}}
+				<span class="item-note">{{pck.addr}}</span>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-pane>
