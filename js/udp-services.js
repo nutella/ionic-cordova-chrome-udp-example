@@ -45,7 +45,12 @@ function udpServices($q,$ionicLoading,$localStorage) {
     };
 
 	function arrayBuffer2str(buf) {
-		return String.fromCharCode.apply(null, new Uint8Array(buf));
+		var str= '';
+		var ui8= new Uint8Array(buf);
+		for (var i= 0 ; i < ui8.length ; i++) {
+			str= str+String.fromCharCode(ui8[i]);
+		}
+		return str;
 	}
 
 	return {
